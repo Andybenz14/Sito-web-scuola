@@ -22,6 +22,7 @@ ul#menu {
 	width: 960px;
 	background-color: #282d2e;
 	font-size:80%
+	font-family: Verdana;
 }
 
 ul#menu li {
@@ -35,7 +36,7 @@ ul#menu li {
 
 ul#menu li a {
 	float: left;
-	padding:12px 49px;
+	padding:12px 41px;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration:none;
