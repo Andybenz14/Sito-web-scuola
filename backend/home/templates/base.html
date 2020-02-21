@@ -1,0 +1,56 @@
+<!-- Struttura Menù di base-->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    {% load static %}
+    <link rel="stylesheet" href= "{% static '/css/style.css' %}" type="text/css">
+    {% block title %}<title>Home del Liceo Marconi Delpino</title>{% endblock %}
+</head>
+<body>
+<center>
+    <div style="width:960px">
+        <img src= "{% static '/Images/headerHome.png' %}" width="960px" height="220px" hspace="0">
+        <ul id="menu">
+            <li><a  href= "{% url 'index' %}" >Home</a></li>
+            <li><a  href= "{% url 'notizie' %}" >Notizie</a>
+            </li>
+            <li><a>Chi siamo</a>
+                <ul>
+                    <li><a href="{% url 'contatti' %}">Contatti</a></li>
+                    <li><a href="{% url 'orari' %}">Orari</a></li>
+                    <li><a href="{% url 'organigramma' %}">Organigramma</a></li>
+                </ul>
+
+
+
+            </li>
+            <li><a  href="#">Servizi</a>
+                <ul>
+                    <li><a href="{% url 'iscrizione' %}">Iscrizione</a></li>
+                    <li><a href="argo.html">Argo</a></li> <!-- TODO: LINK DIRETTO A ARGO! -->
+                </ul>
+            </li>
+
+            <li><a>Progetti</a>
+                <ul>
+                    <li><a href="{% url 'cyberbullismo' %}">Cyberbullismo</a></li>
+                    <li><a href="{% url 'PON' %}">PON</a></li>
+                    <li><a href="{% url 'PCTO' %}">PCTO</a></li>
+                </ul>
+
+            </li>
+            <li><a  href="Rivista Ermes.html">Rivista Ermes</a> <!-- TODO: LINK DIRETTO A ERMES! -->
+            </li>
+        </ul>
+    </div>
+    {% block content %}<!-- default content text (typically empty) -->{% endblock %}
+</center>
+
+</body>
+<div style="padding:20px;
+	margin-top:30px;
+	background-color:white;
+	height:10px;">
+</div>
+
+<!-- Struttura Menù di base-->
