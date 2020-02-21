@@ -85,3 +85,7 @@ ul#menu ul a:hover {
 	background-color: #05e6ad;
 	color:#fff
 }
+
+#organigramma {
+	border: 2px solid grey;
+}
