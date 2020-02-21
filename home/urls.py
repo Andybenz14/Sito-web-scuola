@@ -14,7 +14,6 @@ urlpatterns = [
     path('iscrizione/', views.iscrizione, name="iscrizione"),
 
     ##PROGETTI
-    path('cyberbullismo', views.cyberbullismo, name="cyberbullismo"),
-    path('PON', views.PON, name="PON"),
-    path('PCTO', views.PCTO, name="PCTO")
-]
+    path('cyberbullismo/', views.cyberbullismo, name="cyberbullismo"),
+    path('PON/', views.PON, name="PON"),
+    path('PCTO/', views.PCTO, name="PCTO")
