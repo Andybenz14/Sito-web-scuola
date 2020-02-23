@@ -25,7 +25,7 @@ urlpatterns = [
     #path("news", include('news.urls'))
 
     path('', views.index, name="index"),
-    path('notizie/', views.index, name="notizie"),  # TODO: SEZIONE NOTIZIE!
+    path('notizie/', include("news.urls")),  # TODO: SEZIONE NOTIZIE!
 
     ##CHI SIAMO
     path('contatti/', views.contatti, name="contatti"),

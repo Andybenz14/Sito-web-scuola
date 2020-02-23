@@ -3,6 +3,7 @@ body{
 	font-size:100%;
 	color:#333;
 	font-family:sans-serif;
+	width:auto
 
 }
 
@@ -105,17 +106,19 @@ ul#menu ul a:hover {
 
 html {
   font-size: 100%;
+  background:   #d1e0e0
 }
 
 body {
   font-family: acumin-pro, system-ui, sans-serif;
-  margin: 0;
+  margin: auto;
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-size: 14px;
   background-color: 	#ffffff;
   align-items: start;
   min-height: 100vh;
+  max-width:960px
 }
 
 .footer {

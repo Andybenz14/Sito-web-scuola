@@ -2,6 +2,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name="index"),
-    path('notizie/', views.index, name="notizie"), #TODO: SEZIONE NOTIZIE!
+    path('', views.notizie, name="notizie")  #TODO: SEZIONE NOTIZIE!
 ]
