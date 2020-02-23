@@ -16,4 +16,12 @@ urlpatterns = [
     ##PROGETTI
     path('cyberbullismo/', views.cyberbullismo, name="cyberbullismo"),
     path('PON/', views.PON, name="PON"),
-    path('PCTO/', views.PCTO, name="PCTO"), ]
+    path('PCTO/', views.PCTO, name="PCTO"),
+
+    ##Privacy
+        path('Privacy/', views.Privacy, name="Privacy"),
+
+
+
+
+]
