@@ -1,15 +1,18 @@
 <!-- Struttura Menù di base-->
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8"/>
     {% load static %}
     <link rel="stylesheet" href= "{% static '/css/style.css' %}" type="text/css">
     {% block title %}<title>Home del Liceo Marconi Delpino</title>{% endblock %}
+
 </head>
-<body id="bordo" >
+
+<body>
 <center>
 
-    <div style="width:960px"  >
+    <div style="width:960px"   >
 
         <img src= "{% static '/Images/headerHome.png' %}" width="960px" height="220px" vspace="10" >
         <ul id="menu">
@@ -45,6 +48,8 @@
             </li>
         </ul>
     </div>
+      </div>
+
 {% block content %}{% endblock %}
 </center>
 
