@@ -18,10 +18,10 @@ urlpatterns = [
     path('PON/', views.PON, name="PON"),
     path('PCTO/', views.PCTO, name="PCTO"),
 
-    ##Privacy
+    ##PRIVACY
         path('Privacy/', views.Privacy, name="Privacy"),
 
-
-
+##DOVE SIAMO
+path('dove/', views.dove, name="dove"),
 
 ]
