@@ -91,7 +91,10 @@ ul#menu ul a:hover {
 	border: 4px solid #333;
 }
 
-
+#bordo {
+	border-left:280px solid #d1e0e0;
+  border-right:280px solid #d1e0e0;
+}
 
 
 
