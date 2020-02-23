@@ -92,7 +92,8 @@ ul#menu ul a:hover {
 }
 
 #bordo {
-  position:absolute;
+
+	position:absolute;
 	border-left:280px  solid #d1e0e0;
   border-right:280px solid #d1e0e0;
 
