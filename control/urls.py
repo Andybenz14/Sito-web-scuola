@@ -16,10 +16,34 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic import RedirectView
+from . import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
+
     #path("news", include('news.urls'))
+
+    path('', views.index, name="index"),
+    path('notizie/', views.index, name="notizie"),  # TODO: SEZIONE NOTIZIE!
+
+    ##CHI SIAMO
+    path('contatti/', views.contatti, name="contatti"),
+    path('orari/', views.orari, name="orari"),
+    path("organigramma/", views.organigramma, name="organigramma"),
+
+    ##SERVIZI
+    path('iscrizione/', views.iscrizione, name="iscrizione"),
+
+    ##PROGETTI
+    path('cyberbullismo/', views.cyberbullismo, name="cyberbullismo"),
+    path('PON/', views.PON, name="PON"),
+    path('PCTO/', views.PCTO, name="PCTO"),
+
+    ##PRIVACY
+    path('Privacy/', views.Privacy, name="Privacy"),
+
+    ##DOVE SIAMO
+    path('dove/', views.dove, name="dove"),
+
 ]
