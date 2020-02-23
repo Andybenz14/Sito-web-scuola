@@ -19,9 +19,9 @@ urlpatterns = [
     path('PCTO/', views.PCTO, name="PCTO"),
 
     ##PRIVACY
-        path('Privacy/', views.Privacy, name="Privacy"),
+    path('Privacy/', views.Privacy, name="Privacy"),
 
-##DOVE SIAMO
-path('dove/', views.dove, name="dove"),
+    ##DOVE SIAMO
+    path('dove/', views.dove, name="dove"),
 
 ]
