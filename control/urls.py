@@ -22,8 +22,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    #path("news", include('news.urls'))
-
     path('', views.index, name="index"),
     path('notizie/', include("news.urls")),  # TODO: SEZIONE NOTIZIE!
 
@@ -47,3 +45,11 @@ urlpatterns = [
     path('dove/', views.dove, name="dove"),
 
 ]
+
+# Import settings if not imported
+from django.conf import settings
+# Import static if not imported
+from django.conf.urls.static import static
+
+if settings.DEBUG:
+    urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
