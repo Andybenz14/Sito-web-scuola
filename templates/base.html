@@ -11,10 +11,8 @@
 
 <body>
 <center>
-
-    <div style="width:960px"   >
-
-        <img src= "{% static '/Images/headerHome.png' %}" width="960px" height="220px" vspace="10" >
+    <img src= "{% static '/Images/headerHome.png' %}" width="960px" height="220px" vspace="10" >
+    <div>
         <ul id="menu">
             <li><a  href= "{% url 'index' %}" >Home</a></li>
             <li><a  href= "{% url 'dove' %}" >Dove siamo</a>
@@ -48,9 +46,15 @@
             </li>
         </ul>
     </div>
-      </div>
+    <div style="padding:20px;
+	margin-top:30px;
+	background-color:white;
+	height:10px;">
+    </div>
 
-{% block content %}{% endblock %}
+    <div>
+        {% block content %}{% endblock %}
+    </div>
 </center>
 
 </body>
@@ -70,29 +74,29 @@
     <li class="nav__item">
 
 
-      <ul class="nav__ul">
-        <li>
-          <a href="Privacy">Privacy Policy</a>
-        </li>
+        <ul class="nav__ul">
+            <li>
+                <a href="Privacy">Privacy Policy</a>
+            </li>
 
-        <li>
-          <a href="https://www.trasparenza-pa.net/?codcli=SG27938">Amministrazione trasparente</a>
-        </li>
+            <li>
+                <a href="https://www.trasparenza-pa.net/?codcli=SG27938">Amministrazione trasparente</a>
+            </li>
 
-        <li>
-          <a href="https://www.albipretorionline.com/albopretorioPF3/frontend/atti.xhtml?codcli=SG27938">Albo pretorio</a>
-        </li>
-      </ul>
+            <li>
+                <a href="https://www.albipretorionline.com/albopretorioPF3/frontend/atti.xhtml?codcli=SG27938">Albo pretorio</a>
+            </li>
+        </ul>
     </li>
-  </ul>
 
-  <div class="legal">
-    <p>&copy; 2020 Liceo Marconi Delpino All rights reserved.</p>
 
-    <div class="legal__links">
+    <div class="legal">
+        <p>&copy; 2020 Liceo Marconi Delpino All rights reserved.</p>
 
+        <div class="legal__links">
+
+        </div>
     </div>
-  </div>
 
 </footer>
 
