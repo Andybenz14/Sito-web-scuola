@@ -32,8 +32,8 @@ def PON(request):
     return render(request, "progetti/PON.html")
 
 ##PRIVACY
-def Privacy(request):
-    return render(request, "Privacy.html")
+def privacy(request):
+    return render(request, "privacy.html")
 ##DOVE siamo
 def dove(request):
     return render(request, "dove.html")

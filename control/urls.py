@@ -39,7 +39,7 @@ urlpatterns = [
     path('PCTO/', views.PCTO, name="PCTO"),
 
     ##PRIVACY
-    path('Privacy/', views.Privacy, name="Privacy"),
+    path('privacy/', views.privacy, name="privacy"),
 
     ##DOVE SIAMO
     path('dove/', views.dove, name="dove"),
