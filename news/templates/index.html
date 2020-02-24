@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %} <title> Home del liceo Marconi Delpino </title>
+{% load static %}
+<link rel="stylesheet" href= "{% static '/css/slideshow.css' %}" type="text/css">
+<script type="text/javascript" src="{% static '/javascript/slideshow.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+    {% for post in post_list %}
+                <div class="mySlides fade">
+                    <div class="numbertext"> {{ forloop.counter }}/{{ post_list|length }} </div>
+                    <img class="divimg" src="{{ post.image.url }}" alt="img">
+                    <div class="text">{{ post.title }}</div>
+                </div>
+    {% endfor %}
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script type="text/javascript">
+    window.onload = showSlides(1);
+</script>
+
+
+{% endblock %}
