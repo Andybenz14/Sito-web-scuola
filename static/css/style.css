@@ -238,3 +238,11 @@ body {
 #box4 {
 	border: 2px solid #e80000;
 }
+
+
+img#postpic {
+    max-width: 560px;
+    height: auto;
+     margin-left: auto;
+    margin-right: auto;
+}
