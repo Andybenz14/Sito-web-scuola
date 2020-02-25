@@ -1,4 +1,6 @@
 
+/*MENU*/
+
 body{
 	font-size:100%;
 	color:#333;
@@ -7,14 +9,11 @@ body{
 
 }
 
-/*container*/
 #drop-menu {
 	margin: 0 auto;
 	padding: 0;
 	width: 960px;
 }
-
-/*menu*/
 
 ul#menu {
 	margin:0px 0 0;
@@ -88,6 +87,8 @@ ul#menu ul a:hover {
 	color:#fff
 }
 
+/*ORGANIGRAMMA*/
+
 #organigramma {
 	border: 4px solid #333;
 }
@@ -98,7 +99,7 @@ ul#menu ul a:hover {
 
 
 
-
+/*FOOTER*/
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -269,7 +270,7 @@ body {
 	max-height: 446px;
 }
 
-
+/**/
 img#postpic {
     max-width: 560px;
     height: auto;
