@@ -10,22 +10,20 @@
     {% for post in post_list %}
 
             <div>
-                <div id="mainpostsetting">
-                    <div id="postsetting1">
-                    <h2>{{ post.title }}</h2>
-                      </div>
 
-                    <div id="postsetting2">
-                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img" align="left";></a>
-                    </div>
-                    <div id="postsetting3">
-                     <p>{{post.content|slice:":200" }}</p>
-                       </div>
-                    <div id="postsetting4">
-                    <p>{{ post.author }} | {{ post.created_on}} </p>
-                      </div>
+                    <h2 id="postsetting1">{{ post.title }}</h2>
+
+
+
+                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img" align="left"; id=postsetting2></a>
+
+
+                     <p id="postsetting3">{{post.content|slice:":200" }}</p>
+
+                    <p id="postsetting4">{{ post.author }} | {{ post.created_on}} </p>
+
                 </div>
-            </div>
+
     {% endfor %}
 
     <div class="pagination">
