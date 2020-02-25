@@ -3,14 +3,18 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 760px;
+  max-height: 500px;
   position: relative;
   margin: auto;
+  border-style: groove;
+  border-width: 5px;
+  border-color: #333;
 }
 
 .divimg {
 object-fit: cover;
-width:760px;
-height:500px
+width:750px;
+height:490px
 }
 
 /* Hide the images by default */
@@ -54,10 +58,13 @@ height:500px
 
 /* Caption text */
 .text {
-  text-shadow: #101010 0px 0px 10px;
-  color: #d1e0e0;
-  font-size: 50px;
-  padding: 8px 12px;
+  text-shadow: #333 0px 0px 10px;
+  color: #ffffff;
+  font-size: 47px;
+  text-decoration: underline #ffffff;
+  font-family: Verdana, Geneva, sans-serif;
+  font-variant: small-caps;
+  padding: 6px 40px;
   position: absolute;
   bottom: 10px;
   width: 100%;
