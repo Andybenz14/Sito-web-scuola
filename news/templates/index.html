@@ -14,8 +14,8 @@
     {% for post in post_list %}
                 <div class="mySlides fade">
                     <div class="numbertext"> {{ forloop.counter }}/{{ post_list|length }} </div>
-                    <img class="divimg" src="{{ post.image.url }}" alt="img">
-                    <div class="text">{{ post.title }}</div>
+                    <a href="{% url 'post_detail' post.slug  %}"><img class="divimg" src="{{ post.image.url }}" alt="img"></a>
+                    <a href="{% url 'post_detail' post.slug  %}"><div class="text">{{ post.title }}</div></a>
                 </div>
     {% endfor %}
 

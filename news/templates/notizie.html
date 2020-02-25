@@ -13,7 +13,7 @@
                     <h2>{{ post.title }}</h2>
                     <p>{{ post.author }} | {{ post.created_on}} </p>
                     <p>{{post.content|slice:":200" }}</p>
-                    <img id=postpic src="{{ post.image.url }}" alt="img">
+                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img"></a>
                 </div>
             </div>
     {% endfor %}
