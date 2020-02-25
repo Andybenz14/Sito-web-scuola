@@ -45,6 +45,8 @@ urlpatterns = [
     ##DOVE SIAMO
     path('dove/', views.dove, name="dove"),
 
+    ##ACCESSO
+    path('accesso/', views.accesso, name="accesso"),
 ]
 
 # Import settings if not imported
