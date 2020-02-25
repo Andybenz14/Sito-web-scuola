@@ -38,7 +38,7 @@ ul#menu li {
 
 ul#menu li a {
 	float: left;
-	padding:12px 26.541px;
+	padding:12px 18px;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration:none;
@@ -226,17 +226,47 @@ body {
 .heart {
   color: #2f2f2f;
 }
+
+
+/*box contatti*/
 #box1 {
 	border: 2px solid #0061fc;
+
+
 }
 #box2 {
 	border: 2px solid #02ab2a;
+
 }
 #box3 {
 	border: 2px solid #e38100;
+
 }
 #box4 {
 	border: 2px solid #e80000;
+}
+
+/*box google maps*/
+#box5 {
+	border: 3px solid #02ab2a;
+	min-width: 706px;
+	max-height: 446px;
+}
+#box6 {
+	border: 3px solid #e80000;
+	min-width: 706px;
+	max-height: 446px;
+
+}
+#box7 {
+	border: 3px solid #e38100;
+	min-width: 706px;
+	max-height: 446px;
+}
+#box8 {
+	border: 3px solid #030bfc;
+	min-width: 706px;
+	max-height: 446px;
 }
 
 
