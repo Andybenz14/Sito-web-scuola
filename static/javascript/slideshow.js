@@ -8,6 +8,11 @@ function resetSlide(t) {
         resetSlide(5000);}), t);
 }
 
+function showClick(n) {
+    currentSlide(n);
+    resetSlide(10000);
+}
+
 function plusOne() {
     plusSlides(1);}
 
@@ -41,7 +46,3 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-function helperClick(n) {
-    showSlides(n);
-    resetSlide(10000);
-}

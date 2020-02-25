@@ -26,7 +26,7 @@
 
 <div style="text-align:center">
     {% for post in post_list %}
-  <span class="dot" onclick="helperClick({{ forloop.counter }})"></span>
+  <span class="dot" onclick="showClick( {{ forloop.counter }} )"></span>
     {% endfor %}
 </div>
 
