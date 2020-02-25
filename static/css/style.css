@@ -229,25 +229,26 @@ body {
 }
 
 
-/*box contatti*/
+/*BOX CONTATTI*/
 #box1 {
 	border: 2px solid #0061fc;
-
+	margin-bottom: 1px;
 
 }
 #box2 {
 	border: 2px solid #02ab2a;
-
+	margin-bottom: 1px;
 }
 #box3 {
 	border: 2px solid #e38100;
-
+	margin-bottom: 1px;
 }
 #box4 {
 	border: 2px solid #e80000;
+	margin-bottom: 1px;
 }
 
-/*box google maps*/
+/*BOX GOOGLE MAPS*/
 #box5 {
 	border: 3px solid #02ab2a;
 	min-width: 706px;
@@ -270,7 +271,59 @@ body {
 	max-height: 446px;
 }
 
-/**/
+/*BOX CYBERBULLISMO*/
+#box9 {
+	border-top: 3px solid #129600;
+font-family: Verdana;
+}
+#box10 {
+	border-top: 3px solid #129600;
+	border-bottom: 3px solid #129600;
+	font-family: acumin-pro, system-ui, sans-serif;
+	text-align: justify;
+ 	padding: 0px 8px;
+	font-size: 20px;
+}
+
+
+/*POST SETTINGS*/
+
+#mainpostsetting {
+
+max-width: 568px;
+border-radius: 10px 10px 10px 50px;
+
+}
+
+
+
+ #postsetting1{
+font-style: Verdana;
+font-size: 18px;
+
+
+ }
+ #postsetting2{
+
+
+
+ }
+ #postsetting3{
+font-style: Verdana;
+font-size: 13px;
+
+
+
+ }
+
+ #postsetting4{
+font-style: Verdana;
+font-size: 11px;
+
+}
+
+
+/*dimesioni standard immagini sito*/
 img#postpic {
     max-width: 560px;
     height: auto;

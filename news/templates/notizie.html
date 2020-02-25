@@ -8,12 +8,22 @@
 {% block content %}
 
     {% for post in post_list %}
+
             <div>
-                <div>
+                <div id="mainpostsetting">
+                    <div id="postsetting1">
                     <h2>{{ post.title }}</h2>
+                      </div>
+
+                    <div id="postsetting2">
+                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img" style="float: right margin:0px 10px 10px 0px";></a>
+                    </div>
+                    <div id="postsetting3">
+                     <p>{{post.content|slice:":200" }}</p>
+                       </div>
+                    <div id="postsetting4">
                     <p>{{ post.author }} | {{ post.created_on}} </p>
-                    <p>{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img"></a>
+                      </div>
                 </div>
             </div>
     {% endfor %}
