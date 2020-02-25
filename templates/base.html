@@ -19,7 +19,8 @@
             <li><a  href= "{% url 'dove' %}" >Dove siamo</a>
             <li><a  href= "{% url 'notizie' %}" >Notizie</a>
             </li>
-            <li><a>Chi siamo</a>
+
+           <li><a>Chi siamo</a>
                 <ul>
                     <li><a href="{% url 'contatti' %}">Contatti</a></li>
                     <li><a href="{% url 'orari' %}">Orari</a></li>
@@ -59,7 +60,7 @@
         {% block content %}{% endblock %}
     </div>
 </center>
-
+{% block offcenter %}{% endblock %}
 </body>
 <div style="padding:20px;
 	margin-top:30px;

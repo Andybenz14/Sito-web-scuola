@@ -5,7 +5,7 @@
 
 {% endblock %}
 
-{% block content %}
+{% block offcenter %}
 
     {% for post in post_list %}
 
@@ -16,7 +16,7 @@
                       </div>
 
                     <div id="postsetting2">
-                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img" style="float: right margin:0px 10px 10px 0px";></a>
+                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img" align="left";></a>
                     </div>
                     <div id="postsetting3">
                      <p>{{post.content|slice:":200" }}</p>

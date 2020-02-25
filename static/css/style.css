@@ -308,11 +308,11 @@ font-size: 18px;
 
 
  }
- #postsetting3{
+ #card-text{
 font-style: Verdana;
 font-size: 13px;
-
-
+float: right;
+text-align: justify;
 
  }
 
