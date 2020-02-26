@@ -5,24 +5,19 @@
 
 {% endblock %}
 
-{% block offcenter %}
+{% block content %}
 
     {% for post in post_list %}
-
             <div>
+                <div>
 
-                    <h2 id="postsetting1">{{ post.title }}</h2>
+                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img"></a>
+                    <h2 id="posttitle">{{ post.title }}</h2>
+                        <p id="postcontent">{{post.content|slice:":200" }}</p>
+                    <p id="postdata">{{ post.author }} | {{ post.created_on}} </p>
+                  </div>
+            </div>
 
-
-
-                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img" align="left"; id=postsetting2></a>
-
-
-                     <p id="postsetting3">{{post.content|slice:":200" }}</p>
-
-                    <p id="postsetting4">{{ post.author }} | {{ post.created_on}} </p>
-
-                </div>
 
     {% endfor %}
 
@@ -44,6 +39,35 @@
     </span>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 {% endblock %}
