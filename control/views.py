@@ -17,7 +17,8 @@ def organigramma(request):
 ##SERVIZI
 def iscrizione(request):
     return render(request, "servizi/iscrizione.html")
-
+def scuolainchiaro(request):
+    return render(request, "servizi/scuolainchiaro.html")
 ##PROGETTI
 def cyberbullismo(request):
     return render(request, "progetti/cyberbullismo.html")

@@ -33,7 +33,7 @@ urlpatterns = [
 
     ##SERVIZI
     path('iscrizione/', views.iscrizione, name="iscrizione"),
-
+    path('scuolainchiaro/', views.scuolainchiaro, name="scuolainchiaro"),
     ##PROGETTI
     path('cyberbullismo/', views.cyberbullismo, name="cyberbullismo"),
     path('PON/', views.PON, name="PON"),
@@ -48,6 +48,10 @@ urlpatterns = [
     ##ACCESSO
     path('accesso/', views.accesso, name="accesso"),
 ]
+
+
+
+
 
 # Import settings if not imported
 from django.conf import settings
