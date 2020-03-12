@@ -38,3 +38,6 @@ def dove(request):
 ##ACCESSO
 def accesso(request):
     return render(request, "accesso.html")
+##LINK ISTITUZIONALI
+def albo(request):
+    return render(request, "albo.html")

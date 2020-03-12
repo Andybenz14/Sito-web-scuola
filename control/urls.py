@@ -47,6 +47,10 @@ urlpatterns = [
 
     ##ACCESSO
     path('accesso/', views.accesso, name="accesso"),
+
+    ##LINK ISTITUZIONALI
+    path('albo/', views.albo, name="albo"),
+
 ]
 
 
