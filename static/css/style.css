@@ -285,6 +285,35 @@ font-family: Verdana;
 	font-size: 20px;
 }
 
+/*BOX PCTO*/
+#box11 {
+	border-top: 3px solid #0081eb;
+font-family: Verdana;
+}
+#box12 {
+	border-top: 3px solid #0081eb;
+	border-bottom: 3px solid #0081eb;
+	font-family: acumin-pro, system-ui, sans-serif;
+	text-align: justify;
+ 	padding: 0px 8px;
+	font-size: 20px;
+}
+
+/*BOX PRIVACY POLICY*/
+#box13 {
+	border-top: 3px solid #0081eb;
+font-family: Verdana;
+}
+#box14 {
+	border-top: 3px solid #0081eb;
+	border-bottom: 3px solid #0081eb;
+	font-family: acumin-pro, system-ui, sans-serif;
+	text-align: justify;
+ 	padding: 0px 8px;
+	font-size: 20px;
+}
+
+
 
 /*POST SETTINGS*/
 #posttitle{
