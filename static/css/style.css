@@ -301,17 +301,38 @@ font-family: Verdana;
 
 /*BOX PRIVACY POLICY*/
 #box13 {
-	border-top: 3px solid #0081eb;
+	border-top: 3px solid #0b0654;
 font-family: Verdana;
+	font-size: 12px;
 }
 #box14 {
-	border-top: 3px solid #0081eb;
-	border-bottom: 3px solid #0081eb;
+
+	border-bottom: 1.5px solid #0b0654;
 	font-family: acumin-pro, system-ui, sans-serif;
 	text-align: justify;
  	padding: 0px 8px;
 	font-size: 20px;
 }
+#box15 {
+
+	border-bottom: 3px solid #0b0654;
+	font-family: acumin-pro, system-ui, sans-serif;
+	text-align: justify;
+ 	padding: 0px 8px;
+	font-size: 20px;
+}
+
+#box16 {
+	border-top: 3px solid #0b0654;
+font-family: Verdana;
+	font-size: 13px;
+}
+
+
+
+}
+
+
 
 
 
@@ -344,4 +365,16 @@ img#postpic {
     height: auto;
      margin-left: auto;
     margin-right: auto;
+}
+
+
+
+a:link, a:visited {
+    text-decoration:none;
+    color: #ff5e00;
+    background-color: transparent;
+}
+a:hover, a:active {
+    text-decoration: underline overline;
+    color: #05afe8;
 }
