@@ -6,7 +6,7 @@
     {% load static %}
     <link rel="stylesheet" href= "{% static '/css/style.css' %}" type="text/css">
     {% block title %}<title>Home del Liceo Marconi Delpino</title>{% endblock %}
-
+<script src="https://kit.fontawesome.com/e5ca0055b3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,12 +15,12 @@
     <img src= "{% static '/Images/headerHome.png' %}" width="960px" height="220px" vspace="10" >
     <div>
         <ul id="menu">
-            <li><a  href= "{% url 'index' %}" >Home</a></li>
-            <li><a  href= "{% url 'dove' %}" >Dove siamo</a>
-            <li><a  href= "{% url 'notizie' %}" >Notizie</a>
+            <li><a  href= "{% url 'index' %}" ><i class="fas fa-home"> Home</i></a></li>
+            <li><a  href= "{% url 'dove' %}" ><i class="fas fa-map-marked-alt"></i> Dove siamo</a>
+            <li><a  href= "{% url 'notizie' %}" ><i class="fas fa-newspaper"></i> Notizie</a>
             </li>
 
-           <li><a>Chi siamo</a>
+           <li><a><i class="fas fa-users"></i> Chi siamo</a>
                 <ul>
                     <li><a href="{% url 'contatti' %}">Contatti</a></li>
                     <li><a href="{% url 'orari' %}">Orari</a></li>
@@ -30,14 +30,14 @@
 
 
             </li>
-            <li><a>Servizi</a>
+            <li><a><i class="fas fa-hands-helping"></i> Servizi</a>
                 <ul>
                     <li><a href="{% url 'iscrizione' %}">Iscrizione</a></li>
                     <li><a href="http://www.sg27938.scuolanext.info/">Argo</a></li>
                     <li><a href="https://cercalatuascuola.istruzione.it/cercalatuascuola/">Scuola in chiaro</a></li>
                 </ul>
             </li>
-            <li><a>Progetti</a>
+            <li><a><i class="fas fa-project-diagram"></i> Progetti</a>
                 <ul>
                     <li><a href="{% url 'cyberbullismo' %}">Cyberbullismo</a></li>
                     <li><a href="https://www.istruzione.it/pon/">PON</a></li> <!--da denifinire-->
@@ -45,11 +45,11 @@
                 </ul>
 
             </li>
-            <li><a  href="https://blogermes.wordpress.com/informazioni/">Rivista Ermes</a>
+            <li><a  href="https://blogermes.wordpress.com/informazioni/"><i class="fas fa-feather-alt"></i> Rivista Ermes</a>
 
             </li>
 
-            <li><a>Link istituzionali</a>
+            <li><a><i class="fas fa-external-link-alt"></i> Link istituzionali</a>
                 <ul>
             <li>
                 <a href="{% url 'privacy' %}">Privacy Policy</a>
@@ -74,7 +74,7 @@
 
 
             </ul>
-                <li><a  href="{% url 'admin:index' %}">Login</a>
+                <li><a  href="{% url 'admin:index' %}"><i class="fas fa-lock"></i> Login</a>
                     </li>
 
 

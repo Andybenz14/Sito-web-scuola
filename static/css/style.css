@@ -22,7 +22,7 @@ ul#menu {
 	float:left;
 	width: 960px;
 	background-color: #282d2e;
-	font-size:80%
+	font-size:88%;
 	font-family: Verdana;
 }
 
@@ -37,7 +37,7 @@ ul#menu li {
 
 ul#menu li a {
 	float: left;
-	padding:12px 12px;
+	padding:12px 7px;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration:none;
@@ -86,6 +86,12 @@ ul#menu ul a:hover {
 	background-color: #05e6ad;
 	color:#fff
 }
+
+
+
+
+
+
 
 /*ORGANIGRAMMA*/
 
