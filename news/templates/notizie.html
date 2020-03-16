@@ -9,13 +9,16 @@
 
     {% for post in post_list %}
             <div>
-                <div>
-
+              <div class="card">
+<div class="container">
                     <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img"></a>
+
                     <h2 id="posttitle">{{ post.title }}</h2>
                         <p id="postcontent">{{post.content|slice:":200" }}</p>
                     <p id="postdata">{{ post.author }} | {{ post.created_on}} </p>
+
                   </div>
+                </div>
             </div>
 
 
