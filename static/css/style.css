@@ -349,8 +349,7 @@ font-family: vollkorn;
 }
 
 #postcontent{
-
-
+word-wrap: break-word;
 }
 
 #postdata{
@@ -359,34 +358,12 @@ font-size: 10px;
 }
 
 
-
-
-
-
-
-
-/*dimesioni standard immagini sito*/
 img#postpic {
     max-width: 500px;
     max-height:500px;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 }
-
-
-
-a:link, a:visited {
-    text-decoration:none;
-    color: #ff5e00;
-    background-color: transparent;
-}
-a:hover, a:active {
-    text-decoration: underline overline;
-    color: #05afe8;
-}
-
-
-
 
 .card {
   box-shadow: 2px 2px 4px #000000;
@@ -396,11 +373,25 @@ a:hover, a:active {
 	margin-bottom: 30px;
 }
 
-#postcontent{
-word-wrap: break-word;
-}
+
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
   border-radius: 5px 5px 0 0;
 
+}
+
+
+
+
+
+/*STILE LINK*/
+
+a:link, a:visited {
+    text-decoration:none;
+    color: #ff5e00;
+    background-color: transparent;
+}
+a:hover, a:active {
+    text-decoration: underline overline;
+    color: #05afe8;
 }
