@@ -367,8 +367,8 @@ font-size: 10px;
 
 /*dimesioni standard immagini sito*/
 img#postpic {
-    max-width: 400px;
-    max-height:400px;
+    max-width: 500px;
+    max-height:500px;
      margin-left: auto;
     margin-right: auto;
 }
@@ -389,17 +389,16 @@ a:hover, a:active {
 
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 4px #000000;
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
-	max-width: 450px;
-	max-height:450px;
-}
-.container{
-	max-width: 450px;
-	max-height: 450px;
+	max-width: 500px;
+	margin-bottom: 30px;
 }
 
+#postcontent{
+word-wrap: break-word;
+}
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
   border-radius: 5px 5px 0 0;
