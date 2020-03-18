@@ -4,11 +4,12 @@
 {% block content %}
 
 <div>
+  <div class="card11">
     <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
-    <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-    <img id=postpic src="{{ post.image.url }}" alt="img">
+    <img id=postpic2 src="{{ post.image.url }}" alt="img">
     <p class="card-text ">{{ object.content | safe }}</p>
-
+    <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+</div>
 </div>
 
 {% endblock %}
