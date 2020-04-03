@@ -91,8 +91,6 @@ ul#menu ul a:hover {
 
 
 
-
-
 /*ORGANIGRAMMA*/
 
 #organigramma {
@@ -235,7 +233,7 @@ body {
 }
 
 
-/*BOX CONTATTI*/
+/*CARD CONTATTI*/
 .card6 {
   box-shadow:2px  2px 4px blue;
   transition: 0.3s;
@@ -261,7 +259,7 @@ body {
 
 }
 
-/*BOX GOOGLE MAPS*/
+/*CARD GOOGLE MAPS*/
 
 .card2 {
   box-shadow: 2px 2px 4px #000000;
@@ -356,7 +354,7 @@ font-family: Verdana;
 
 
 
-/*POST SETTINGS*/
+/*POST/POSTS STYLE*/
 #posttitle{
 color: #333;
 font-family: vollkorn;
@@ -418,7 +416,7 @@ a:hover, a:active {
 }
 
 
-/*BOX ALBO*/
+/*CARD ALBO*/
 .card10 {
   box-shadow: 2px 2px 4px #000000;
   transition: 0.3s;
