@@ -1,3 +1,14 @@
+/*MENU scroll*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
 
 /*MENU*/
 
@@ -24,6 +35,8 @@ ul#menu {
 	background-color: #282d2e;
 	font-size:88%;
 	font-family: Verdana;
+ z-index: 1;
+
 }
 
 ul#menu li {
@@ -267,6 +280,7 @@ body {
   border-radius: 5px; /* 5px rounded corners */
 	max-width: 700px;
 		max-height: 440px;
+
 }
 .card3 {
   box-shadow: 2px 2px 4px #000000;
