@@ -368,7 +368,7 @@ font-family: Verdana;
 
 
 
-/*POST/POSTS STYLE*/
+/*POSTS STYLE*/
 #posttitle{
 color: #333;
 font-family: vollkorn;
@@ -392,6 +392,21 @@ img#postpic {
   	border-radius: 5px 5px 0 0;
 }
 
+ .card {
+
+   -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+ }
+ .card:hover {
+   -webkit-transform: rotate(-2deg);
+     -moz-transform: rotate(-2deg);
+     -o-transform: rotate(-2deg);
+     -ms-transform: rotate(-2deg);
+     transform: rotate(-2deg);
+ }
 
 .card {
   box-shadow: 2px 2px 4px #000000;
@@ -402,11 +417,11 @@ img#postpic {
 }
 
 
-
+/*POST STYLE*/
 
 
 img#postpic2 {
-    max-width: 800px;
+    max-width: 792px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -414,9 +429,13 @@ img#postpic2 {
 .card11 {
   box-shadow: 2px 2px 4px #000000;
   transition: 0.3s;
-
+max-width: 800px;
+text-align: justify;
+padding: 4px;
 }
-
+.title{
+  text-align: center;
+}
 /*STILE LINK*/
 
 a:link, a:visited {
