@@ -251,25 +251,29 @@ body {
   box-shadow:2px  2px 4px blue;
   transition: 0.3s;
 	max-width: 956px;
-
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .card7 {
   box-shadow: 2px 2px 4px green;
   transition: 0.3s;
 	max-width: 956px;
-
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .card8 {
   box-shadow: 2px 2px 4px red;
   transition: 0.3s;
 	max-width: 956px;
-
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 .card9 {
   box-shadow: 2px 2px 4px orange;
   transition: 0.3s;
 	max-width: 956px;
-
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 /*CARD GOOGLE MAPS*/
