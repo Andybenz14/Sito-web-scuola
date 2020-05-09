@@ -431,7 +431,7 @@ img#postpic {
 
 }
 
-img#postpic {
+.card {
        -webkit-filter: brightness(100%);
        -webkit-transition: all 0.5s ease;
        -moz-transition: all 0.5s ease;
@@ -440,8 +440,9 @@ img#postpic {
        transition: all 0.5s ease;
  }
 
-img#postpic:hover {
+.card:hover {
  -webkit-filter: brightness(50%);
+
 }
 
 
@@ -508,4 +509,35 @@ a:hover, a:active {
   transition: 0.3s;
 	max-width: 200px;
 	max-height: 200px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  ul#menu
+    {
+      padding:1px;
+    float: left;
+      width: 25%;}
+
+ul#menu li{
+  padding:1px;
+  float: left;
+    width: 100%;
+  }
+ul#menu ul{
+  padding:1px;
+  float: left;
+    width: 100%;}
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+        float: left;
+    }
+    .sticky + .content {
+      padding-top: 60px;
+    }
+
+
 }
