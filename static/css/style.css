@@ -1,4 +1,6 @@
-/*MENU scroll*/
+
+
+/*STICKY NAVBAR SCROLL*/
 .sticky {
   position: fixed;
   top: 0;
@@ -10,7 +12,7 @@
 
 
 
-/*MENU*/
+/*NAVBAR*/
 
 body{
 	font-size:100%;
@@ -246,6 +248,10 @@ body {
 }
 
 
+
+
+
+
 /*CARD CONTATTI*/
 .card6 {
   box-shadow:2px  2px 4px blue;
@@ -275,6 +281,12 @@ body {
   padding-bottom: 5px;
   padding-top: 5px;
 }
+
+
+
+
+
+
 
 /*CARD GOOGLE MAPS*/
 
@@ -307,7 +319,14 @@ body {
 	max-width: 700px;
 		max-height: 440px;
 }
+
+
+
+
+
+
 /*BOX CYBERBULLISMO*/
+
 #box9 {
 	border-top: 3px solid #129600;
 font-family: Verdana;
@@ -321,7 +340,14 @@ font-family: Verdana;
 	font-size: 20px;
 }
 
+
+
+
+
+
+
 /*BOX PCTO*/
+
 #box11 {
 	border-top: 3px solid #0081eb;
 font-family: Verdana;
@@ -335,7 +361,14 @@ font-family: Verdana;
 	font-size: 20px;
 }
 
+
+
+
+
+
+
 /*BOX PRIVACY POLICY*/
+
 #box13 {
 	border-top: 3px solid #0b0654;
 font-family: Verdana;
@@ -373,6 +406,7 @@ font-family: Verdana;
 
 
 /*POSTS STYLE*/
+
 #posttitle{
 color: #333;
 font-family: vollkorn;
@@ -405,10 +439,12 @@ img#postpic {
        -ms-transition: all 0.5s ease;
        transition: all 0.5s ease;
  }
+
 img#postpic:hover {
  -webkit-filter: brightness(50%);
-
 }
+
+
 
 
 .card {
@@ -420,8 +456,11 @@ img#postpic:hover {
 }
 
 
-/*POST STYLE*/
 
+
+
+
+/*POST STYLE*/
 
 img#postpic2 {
     max-width: 792px;
@@ -439,6 +478,14 @@ padding: 4px;
 .title{
   text-align: center;
 }
+
+
+
+
+
+
+
+
 /*STILE LINK*/
 
 a:link, a:visited {
@@ -450,6 +497,9 @@ a:hover, a:active {
     text-decoration: underline overline;
     color: #05afe8;
 }
+
+
+
 
 
 /*CARD ALBO*/

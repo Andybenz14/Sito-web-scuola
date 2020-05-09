@@ -1,6 +1,8 @@
 <!-- Struttura Menù di base-->
 <!DOCTYPE html>
 
+<!-- STILI E LINK-->
+
 <head>
     <meta charset="UTF-8"/>
     {% load static %}
@@ -9,10 +11,18 @@
 <script src="https://kit.fontawesome.com/e5ca0055b3.js" crossorigin="anonymous"></script>
 </head>
 
+
+
+
+
+
 <body>
 <center>
 
     <img src= "{% static '/Images/headerHome.png' %}" width="960px" height="220px" vspace="10" >
+
+<!-- NAVBAR-->
+
     <div>
         <ul id="menu">
             <li><a  href= "{% url 'index' %}" ><i class="fas fa-home"> Home</i></a></li>
@@ -76,11 +86,12 @@
             </ul>
                 <li><a  href="{% url 'admin:index' %}"><i class="fas fa-lock"></i> Login</a>
                     </li>
+         </ul>
+      </div>
 
 
 
-        </ul>
-    </div>
+<!-- STICKY NAVBAR-->
 
     <script>
 window.onscroll = function() {myFunction()};
@@ -97,6 +108,9 @@ function myFunction() {
 }
 </script>
 
+
+
+
     <div style="padding:20px;
 	margin-top:30px;
 	background-color:white;
@@ -109,6 +123,9 @@ function myFunction() {
 </center>
 {% block offcenter %}{% endblock %}
 </body>
+
+
+
 <div style="padding:20px;
 	margin-top:30px;
 	background-color:white;
@@ -117,17 +134,15 @@ function myFunction() {
 
 
 
-
+<!-- FOOTER-->
 
 <footer class="footer">
 
+  <div class="legal">
 
-
-
-    <div class="legal">
         <p>&copy; 2020 Liceo Marconi Delpino All rights reserved.</p>
 
-        <div class="legal__links">
+<div class="legal__links">
 
         </div>
     </div>
