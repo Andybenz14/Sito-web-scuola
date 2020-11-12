@@ -7,8 +7,13 @@
     <meta charset="UTF-8"/>
     {% load static %}
     <link rel="stylesheet" href= "{% static '/css/style.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     {% block title %}<title>Home del Liceo Marconi Delpino</title>{% endblock %}
 <script src="https://kit.fontawesome.com/e5ca0055b3.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
 
@@ -17,77 +22,86 @@
 
 
 <body>
-<center>
 
-    <img src= "{% static '/Images/headerHome.png' %}" width="960px" height="220px" vspace="10" >
+
+    <img src= "{% static '/Images/headerHome.png' %}" class="img-fluid" alt="Responsive image">
 
 <!-- NAVBAR-->
 
-    <div>
-        <ul id="menu">
-            <li><a  href= "{% url 'index' %}" ><i class="fas fa-home"> Home</i></a></li>
-            <li><a  href= "{% url 'dove' %}" ><i class="fas fa-map-marked-alt"></i> Dove siamo</a>
-            <li><a  href= "{% url 'notizie' %}" ><i class="fas fa-newspaper"></i> Notizie</a>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+  <a class="navbar-brand" href="{% url 'index' %}">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'dove' %}">Dove siamo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'notizie' %}">Notizie</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Chi siamo
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'contatti' %}">Contatti</a>
+          <a class="dropdown-item" href="{% url 'orari' %}">Orari</a>
+          <a class="dropdown-item" href="{% url 'organigramma' %}">Organigramma</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Servizi
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'iscrizione' %}">Iscrizione</a>
+          <a class="dropdown-item" href="http://www.sg27938.scuolanext.info/">Argo</a>
+          <a class="dropdown-item" href="https://cercalatuascuola.istruzione.it/cercalatuascuola/">Scuola in chiaro</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Progetti
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'cyberbullismo' %}">Cyberbullismo</a>
+          <a class="dropdown-item" href="https://www.istruzione.it/pon/">PON</a>
+          <a class="dropdown-item" href="{% url 'PCTO' %}">PCTO</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://blogermes.wordpress.com/informazioni/">Rivista Ermes</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Link istituzionali
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'privacy' %}">Privacy Policy</a>
+          <a class="dropdown-item" href="https://www.trasparenza-pa.net/?codcli=SG27938">Amministrazione trasparente</a>
+          <a class="dropdown-item" href="https://mad.portaleargo.it/">Argo MAD</a>
+            <a class="dropdown-item" href="{% url 'albo' %}">Albo sindacale</a>
 
-           <li><a><i class="fas fa-users"></i> Chi siamo</a>
-                <ul>
-                    <li><a href="{% url 'contatti' %}"><i class="far fa-address-book"></i> Contatti</a></li>
-                    <li><a href="{% url 'orari' %}"><i class="far fa-clock"></i> Orari</a></li>
-                    <li><a href="{% url 'organigramma' %}"><i class="fas fa-sitemap"></i> Organigramma</a></li>
-                </ul>
-
-
-
-            </li>
-            <li><a><i class="fas fa-hands-helping"></i> Servizi</a>
-                <ul>
-                    <li><a href="{% url 'iscrizione' %}"><i class="fas fa-user-plus"></i> Iscrizione</a></li>
-                    <li><a href="http://www.sg27938.scuolanext.info/"><i class="fas fa-chalkboard"></i> Argo</a></li>
-                    <li><a href="https://cercalatuascuola.istruzione.it/cercalatuascuola/"><i class="fas fa-school"></i> Scuola in chiaro</a></li>
-                </ul>
-            </li>
-            <li><a><i class="fas fa-project-diagram"></i> Progetti</a>
-                <ul>
-                    <li><a href="{% url 'cyberbullismo' %}"><i class="fas fa-user-slash"></i> Cyberbullismo</a></li>
-                    <li><a href="https://www.istruzione.it/pon/"><i class="fas fa-euro-sign"></i> PON</a></li> <!--da denifinire-->
-                    <li><a href="{% url 'PCTO' %}"><i class="fas fa-briefcase"></i> PCTO</a></li>
-                </ul>
-
-            </li>
-            <li><a  href="https://blogermes.wordpress.com/informazioni/"><i class="fas fa-feather-alt"></i> Rivista Ermes</a>
-
-            </li>
-
-            <li><a><i class="fas fa-external-link-alt"></i> Link istituzionali</a>
-                <ul>
-            <li>
-                <a href="{% url 'privacy' %}"><i class="fas fa-key"></i> Privacy Policy</a>
-            </li>
-
-            <li>
-                <a href="https://www.trasparenza-pa.net/?codcli=SG27938"><i class="fas fa-book-open"></i> Amministrazione<br> trasparente</a>
-            </li>
-
-            <li>
-                <a href="https://www.albipretorionline.com/albopretorioPF3/frontend/atti.xhtml?codcli=SG27938"><i class="fas fa-balance-scale"></i> Albo pretorio</a>
-              </li>
-
-              <li>
-                  <a href="https://mad.portaleargo.it/"><i class="fas fa-chalkboard"></i> Argo MAD</a>
-                </li>
-                <li>
-                    <a href="{% url 'albo' %}"><i class="fas fa-user-shield"></i> Albo sindacale</a>
-              </li>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'admin:index' %}">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
 
 
-            </ul>
-                <li><a  href="{% url 'admin:index' %}"><i class="fas fa-lock"></i> Login</a>
-                    </li>
-         </ul>
-      </div>
+
+
+
+
+
 
 
 
@@ -120,7 +134,7 @@ function myFunction() {
     <div>
         {% block content %}{% endblock %}
     </div>
-</center>
+
 {% block offcenter %}{% endblock %}
 </body>
 
@@ -148,5 +162,5 @@ function myFunction() {
     </div>
 
 </footer>
-
+    </div>
 <!-- Struttura Menù di base-->
