@@ -23,7 +23,7 @@ from news.views import IndexPostList# This is horrible
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', IndexPostList.as_view(), name="index"),
+    path('a', IndexPostList.as_view(), name="index"),
     path('notizie/', include("news.urls")),  # TODO: SEZIONE NOTIZIE!
 
     ##CHI SIAMO
