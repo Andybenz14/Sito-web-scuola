@@ -23,14 +23,12 @@
 
 <body>
 
-
-    <img src= "{% static '/Images/headerHome.png' %}" class="img-fluid" alt="Responsive image">
+<img src= "{% static '/Images/headerHome.png' %}" class="img-fluid" alt="Responsive image">
 
 <!-- NAVBAR-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <img src="static\Images\headerHome (2).png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy" >
-  &ensp;
+  <img src="static\Images\headerHome (2).png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
   <a class="navbar-brand" href="{% url 'index' %}">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -44,7 +42,7 @@
         <a class="nav-link" href="{% url 'notizie' %}">Notizie</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Chi siamo
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -54,7 +52,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Servizi
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -64,7 +62,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Progetti
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -96,36 +94,6 @@
 </nav>
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- STICKY NAVBAR-->
-
-    <script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("menu");
-var sticky = menu.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    menu.classList.add("sticky")
-  } else {
-    menu.classList.remove("sticky");
-  }
-}
-</script>
-
-
-
-
     <div style="padding:20px;
 	margin-top:30px;
 	background-color:white;
@@ -133,10 +101,11 @@ function myFunction() {
     </div>
 
     <div>
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
     </div>
 
-{% block offcenter %}{% endblock %}
+{% block offcenter %} {% endblock %}
 </body>
 
 
@@ -155,7 +124,6 @@ function myFunction() {
 
 <div class="col-12">
 Copyright &copy; 2020 Liceo Marconi Delpino All rights reserved.
-</div>
 </div>
 
 </footer>
