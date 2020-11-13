@@ -2,38 +2,42 @@
 
 {% block title %} <title> Home del liceo Marconi Delpino </title>
 {% load static %}
-<link rel="stylesheet" href= "{% static '/css/slideshow.css' %}" type="text/css">
-<script type="text/javascript" src="{% static '/javascript/slideshow.js' %}"></script>
+
 {% endblock %}
 
 {% block content %}
 
-<div class="slideshow-container">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+</ol>
 
-  <!-- Full-width images with number and caption text -->
+<div class="carousel-inner">
+
+
+
     {% for post in post_list %}
-                <div class="mySlides fade">
-                    <div class="numbertext"> {{ forloop.counter }}/{{ post_list|length }} </div>
-                    <a href="{% url 'post_detail' post.slug  %}"><img class="divimg" src="{{ post.image.url }}" alt="img"></a>
-                    <a href="{% url 'post_detail' post.slug  %}"><div class="text">{{ post.title }}</div></a>
-                </div>
+  <div class="carousel-item active">
+      <img class="d-block w-100" src="{{ post.image.url }}" alt="">
+    </div>
+
+
     {% endfor %}
 
-    <a class="prev" onclick="plusClick(-1)">&#10094;</a>
-    <a class="next" onclick="plusClick(1)">&#10095;</a>
-</div>
-<br>
 
-<div style="text-align:center">
-    {% for post in post_list %}
-  <span class="dot" onclick="showClick( {{ forloop.counter }} )"></span>
-    {% endfor %}
-</div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-<script type="text/javascript">
-    window.onload = showSlides(1);
-    resetSlide(5000);
-</script>
+
 
 
 {% endblock %}
