@@ -28,7 +28,8 @@
 
 <!-- NAVBAR-->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <img src="{% static '\Images\headerHome (2).png' %}" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy" >
   &ensp;
   <a class="navbar-brand" href="{% url 'index' %}">Home</a>
@@ -108,21 +109,6 @@
 
 <!-- STICKY NAVBAR-->
 
-    <script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("menu");
-var sticky = menu.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    menu.classList.add("sticky")
-  } else {
-    menu.classList.remove("sticky");
-  }
-}
-</script>
-
 
 
 
@@ -132,30 +118,30 @@ function myFunction() {
 	height:10px;">
     </div>
 
-    <div>
-        {% block content %}{% endblock %}
-    </div>
-
-{% block offcenter %}{% endblock %}
 </body>
 
 
 
-<div style="padding:20px;
-	margin-top:30px;
-	background-color:white;
-	height:10px;">
-</div>
+
+    <div>
+        {% block content %}{% endblock %}
+    </div>
 
 
+{% block offcenter %}{% endblock %}
+
+<!-- Footer -->
 
 
-<!-- FOOTER-->
-<footer id="bottom" class="row text-center " >
-
-<div class="col-12">
-Copyright &copy; 2020 Liceo Marconi Delpino All rights reserved.
-</div>
-</div>
-
+<footer>
+  <div style="background-color:#3b3b3b;
+  min-height: 60px;
+  padding-top: 12px;
+  bottom:0;
+  position:relative;
+  ">
+<center>
+        <font color="white">© 2020 Copyright: 2020 Liceo Marconi Delpino All rights reserved.</font>
+</center>
+    </div>
 </footer>

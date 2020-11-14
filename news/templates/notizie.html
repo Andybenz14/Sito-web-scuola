@@ -8,17 +8,40 @@
 {% block content %}
 
     {% for post in post_list %}
-            <div>
-              <div class="card">
-<div class="container">
-                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" alt="img"></a>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div>
+              <center>
+              <div class="card" style="width: 60rem;">
+<div class="container">
+                    <a href="{% url 'post_detail' post.slug  %}"><img id=postpic src="{{ post.image.url }}" class="card-img-top" alt=""></a>
+    <div class="card-body">
+        <div class="card-text">
                     <h2 id="posttitle">{{ post.title }}</h2>
                         <p id="postcontent">{{post.content|slice:":200" }}</p>
                     <p id="postdata">{{ post.author }} | {{ post.created_on}} </p>
-
+</center>
                   </div>
-                </div>
+                </div></div>
             </div>
 
 
