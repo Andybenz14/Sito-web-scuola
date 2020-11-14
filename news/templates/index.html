@@ -6,7 +6,11 @@
 {% endblock %}
 
 {% block content %}
-
+<center>
+<div style="max-width:1300px;
+max-height:1000px;
+padding:50px;
+font-size:33px; ">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
   {% for post in post_list %}
@@ -17,8 +21,12 @@
 <div class="carousel-inner">
 
     {% for post in post_list %}
+
   <div class="carousel-item" id="slideshow_{{ forloop.counter }}">
       <img class="d-block w-100" src="{{ post.image.url }}" alt="">
+      <div class="carousel-caption d-none d-md-block">
+  {{ post.title }}
+  </div>
     </div>
 
 
@@ -40,6 +48,6 @@
   document.getElementById("slideshow_1").classList.add("active")
   document.getElementById("slideshow_ind_1").classList.add("active")
 </script>
-
-
+</div>
+</center>
 {% endblock %}
