@@ -3,13 +3,13 @@
 
 {% block content %}
 
-<div>
+
 
     <h1 class="title">{% block title %} {{ object.title }} {% endblock title %}</h1>
-    <img  src="{{ post.image.url }}" alt="img">
+ <img  src="{{ post.image.url }}" alt="img">
     <p class="card-text ">{{ object.content | safe }}</p>
     <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-</div>
+
 
 
 {% endblock %}
