@@ -41,3 +41,6 @@ def accesso(request):
 ##LINK ISTITUZIONALI
 def albo(request):
     return render(request, "albo.html")
+##MODULISTICA
+def modulistica(request):
+    return render(request, "modulistica.html")
