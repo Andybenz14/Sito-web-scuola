@@ -9,17 +9,15 @@
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
-<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-<li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
-<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  {% for post in post_list %}
+<li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.counter }}" id="slideshow_ind_{{ forloop.counter }}"></li>
+  {% endfor %}
 </ol>
 
 <div class="carousel-inner">
 
-
-
     {% for post in post_list %}
-  <div class="carousel-item active">
+  <div class="carousel-item" id="slideshow_{{ forloop.counter }}">
       <img class="d-block w-100" src="{{ post.image.url }}" alt="">
     </div>
 
@@ -36,8 +34,12 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>
 
-
+<script>
+  document.getElementById("slideshow_1").classList.add("active")
+  document.getElementById("slideshow_ind_1").classList.add("active")
+</script>
 
 
 {% endblock %}
