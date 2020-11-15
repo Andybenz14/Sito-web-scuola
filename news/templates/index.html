@@ -6,12 +6,14 @@
 {% endblock %}
 
 {% block content %}
-<center>
-<div style="max-width:1300px;
 
+<center>
+<div style="max-width:800px;
+position:sticky;
 padding:50px;
-font-size:33px; ">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+font-size:33px;
+ ">
+<div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 <ol class="carousel-indicators">
   {% for post in post_list %}
 <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.counter }}" id="slideshow_ind_{{ forloop.counter }}"></li>
@@ -23,15 +25,20 @@ font-size:33px; ">
     {% for post in post_list %}
 
   <div class="carousel-item" id="slideshow_{{ forloop.counter }}">
-      <img class="d-block w-100" src="{{ post.image.url }}" alt="">
+    <div style="max-height: 600px;
+     ">
+      <img class="d-block w-100" src="{{ post.image.url }}" alt="">  </div>
       <div class="carousel-caption d-none d-md-block">
   {{ post.title }}
   </div>
     </div>
 
 
-    {% endfor %}
 
+    {% endfor %}
+    <div style="max-width:800px;
+    max-height: 600px;
+">
 
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -42,7 +49,7 @@ font-size:33px; ">
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+</div>  </div>
 
 <script>
   document.getElementById("slideshow_1").classList.add("active")
