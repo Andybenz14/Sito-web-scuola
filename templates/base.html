@@ -18,6 +18,7 @@
 
 
 <div style="
+
 background-color:#8bbdc4;">
 
 
@@ -25,6 +26,8 @@ background-color:#8bbdc4;">
 <body>
 <div style="max-width:1200px;
 background-color:white;
+
+
 ">
 
     <img src= "{% static '/Images/headerHome.png' %}" class="img-fluid" alt="Responsive image">
@@ -100,7 +103,11 @@ background-color:white;
     </ul>
   </div>
 </nav>
+<div style="padding:20px;
 
+background-color:white;
+height:10px;">
+</div>
 
 
 
@@ -117,11 +124,7 @@ background-color:white;
 
 
 
-    <div style="padding:20px;
-	margin-top:30px;
-	background-color:white;
-	height:10px;">
-    </div>
+
 
     <div>
         {% block content %}{% endblock %}
@@ -130,11 +133,13 @@ background-color:white;
 
 {% block offcenter %}{% endblock %}
 
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>2020 Copyright &copy; 2020 Liceo Marconi Delpino All rights reserved.</small>
+    </div>
+  </footer>
 
-
-
-
-
+</div></div>
 
 
 
