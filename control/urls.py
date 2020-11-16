@@ -26,7 +26,8 @@ urlpatterns = [
     path('', IndexPostList.as_view(), name="index"),
     path('notizie/', include("news.urls")),  # TODO: SEZIONE NOTIZIE!
 
-    ##CHI SIAMO
+    ##  Informazioni
+    path('chisiamo/', views.chisiamo, name="chisiamo"),
     path('contatti/', views.contatti, name="contatti"),
     path('orari/', views.orari, name="orari"),
     path("organigramma/", views.organigramma, name="organigramma"),

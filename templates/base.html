@@ -52,9 +52,10 @@ background-color:white;
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Chi siamo
+          Informazioni
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="{% url 'chisiamo' %}">Chi siamo</a>
           <a class="dropdown-item" href="{% url 'contatti' %}">Contatti</a>
           <a class="dropdown-item" href="{% url 'orari' %}">Orari URP</a>
           <a class="dropdown-item" href="{% url 'organigramma' %}">Organigramma</a>

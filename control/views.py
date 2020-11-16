@@ -3,15 +3,18 @@ from django.shortcuts import render
 # Create your views here.
 
 
-##CHI_SIAMO
+##Informazioni
+def chisiamo(request):
+    return render(request, "Informazioni/chisiamo.html")
+
 def contatti(request):
-    return render(request, "chi_siamo/contatti.html")
+    return render(request, "Informazioni/contatti.html")
 
 def orari(request):
-    return render(request, "chi_siamo/orari.html")
+    return render(request, "Informazioni/orari.html")
 
 def organigramma(request):
-    return render(request, "chi_siamo/organigramma.html")
+    return render(request, "Informazioni/organigramma.html")
 
 
 ##SERVIZI
