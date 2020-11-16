@@ -3,19 +3,32 @@
 }
 /* Sticky Footer Classes */
 
-html,
+html {
+  height: 100%;
+}
+
 body {
   height: 100%;
-
+  background-color:#8bbdc4;
 }
 
-#page-content {
-  flex: 1 0 auto;
-}
+.dontgrow {
+    flex-grow: 0;
+    display: flex;}
 
-#sticky-footer {
-  flex-shrink: none;
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width:1200px;
+    background-color:white;
+    margin:auto;
+    height:100%;
+    flex 0 0 auto;}
 
+
+.sticky-footer {
+  display: flex;
+  flex-grow 0;
 }
 
 /* Other Classes for Page Styling */
