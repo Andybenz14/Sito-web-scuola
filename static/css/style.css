@@ -4,11 +4,11 @@
 /* Sticky Footer Classes */
 
 html {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   background-color:#8bbdc4;
 }
 
@@ -16,7 +16,10 @@ body {
     flex-grow: 0;
     display: flex;}
 
-.content {
+.content {text-align: center}
+
+.wholepage {
+    text-align: center;
     display: flex;
     flex-direction: column;
     max-width:1200px;
@@ -30,5 +33,9 @@ body {
   display: flex;
   flex-grow 0;
 }
+
+.centred-div {
+  display: inline-block;
+  margin: 0 auto;}
 
 /* Other Classes for Page Styling */
