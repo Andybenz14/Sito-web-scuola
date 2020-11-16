@@ -7,8 +7,15 @@
 
 {% block content %}
 
+<form action="{% url 'search' %}" method="get" >
+     <input name="q" type="text" placeholder="Cerca fra i moduli...">
+</form>
+
 {% for file in object_list%}
-<p> {{ file.name }}</p>
+<div>
+    <a href="{{file.file.url}}" download><p> {{ file.name }}</p></a>
+    <p> {{ file.created_on }} </p>
+</div>
 {% endfor %}
 
 
