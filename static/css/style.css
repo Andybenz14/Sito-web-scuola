@@ -25,8 +25,7 @@ body {
     max-width:1200px;
     background-color:white;
     margin:auto;
-    height:100%;
-    flex 0 0 auto;}
+    height:100vh;}
 
 
 .sticky-footer {

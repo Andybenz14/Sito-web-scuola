@@ -3,7 +3,6 @@
 
 {% block content %}
 
-<center>
 <div class="card">
   <div class="card-body">
 
@@ -13,7 +12,8 @@
    <div class="card-text">
     <p class="card-text ">{{ object.content | safe }}</p>
     <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
-</div></div></div>
-</center>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
