@@ -53,7 +53,7 @@ urlpatterns = [
     path('albo/', views.albo, name="albo"),
 
     ##MODULISTICA
-    path('modulistica/', views.modulistica, name="modulistica"),
+    path('modulistica/', include("documents.urls")),
 ]
 
 

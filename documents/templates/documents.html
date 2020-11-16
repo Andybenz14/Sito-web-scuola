@@ -1,27 +1,16 @@
 {% extends "base.html" %}
 
 {% block title %}
-<title> Sezione notizie </title>
+<title> Modulistica </title>
 {% endblock %}
+
 
 {% block content %}
 
-    {% for post in post_list %}
+{% for file in object_list%}
+<p> {{ file.name }}</p>
+{% endfor %}
 
-<div class="card" style="width: 60rem;">
-    <div class="card-body">
-        <a href="{% url 'post_detail' post.slug  %}">
-            <img id=postpic src="{{ post.image.url }}" class="img-fluid" alt="Responsive image"></a>
-        <h2 id="posttitle">{{ post.title }}</h2>
-        <p id="postcontent">{{post.content|slice:":200" }}</p>
-        <p id="postdata">{{ post.author }} | {{ post.created_on}} </p>
-            </div>
-</div>
-
-
-
-
-    {% endfor %}
 
 <div class="pagination">
     <span class="step-links">
@@ -39,37 +28,6 @@
             <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
         {% endif %}
     </span>
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 {% endblock %}

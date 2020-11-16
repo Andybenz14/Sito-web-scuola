@@ -11,10 +11,10 @@
   max-width: 800px;
   font-size:33px;">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="newsSlideshow" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         {% for post in post_list %}
-        <li data-target="#carouselExampleIndicators" data-slide-to="{{ forloop.counter }}" id="slideshow_ind_{{ forloop.counter }}"></li>
+        <li data-target="#newsSlideshow" data-slide-to='{{ forloop.counter | add:"-1"  }}' id="slideshow_ind_{{ forloop.counter }}"></li>
         {% endfor %}
       </ol>
 
@@ -33,11 +33,11 @@
 
         {% endfor %}
 
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <a class="carousel-control-prev" href="#newsSlideshow" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#newsSlideshow" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
