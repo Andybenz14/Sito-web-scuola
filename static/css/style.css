@@ -19,13 +19,14 @@ body {
 .content {text-align: center}
 
 .wholepage {
+    overflow: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
     max-width:1200px;
     background-color:white;
     margin:auto;
-    height:100vh;}
+    min-height:100vh;}
 
 
 .sticky-footer {
