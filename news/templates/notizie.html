@@ -8,7 +8,7 @@
 
     {% for post in post_list %}
 <center>
-<div class="card" style="width: 60rem;">
+<div class="card" >
     <div class="card-body">
         <a href="{% url 'post_detail' post.slug  %}">
             <img id=postpic src="{{ post.image.url }}" class="img-fluid" alt="Responsive image">
