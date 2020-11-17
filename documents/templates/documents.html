@@ -9,8 +9,12 @@
 <div class="card">
   <div class="card-header">
 <form action="{% url 'search' %}" method="get" >
-     <input name="q" type="text" placeholder="Cerca fra i moduli...">
-</form>
+
+
+  <form class="example" action="action_page.php">
+    <input type="text" placeholder="Cerca tra i moduli..." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
 </div>
 {% for file in object_list%}
 <div>
