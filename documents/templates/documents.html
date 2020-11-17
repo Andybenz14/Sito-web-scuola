@@ -8,11 +8,8 @@
 {% block content %}
 <div class="card">
   <div class="card-header">
-<form action="{% url 'search' %}" method="get" >
-
-
-  <form class="example" action="action_page.php">
-    <input type="text" placeholder="Cerca tra i moduli..." name="search">
+    <form action="{% url 'search' %}" method="get" >
+    <input type="text" placeholder="Cerca tra i moduli..." name="q">
     <button type="submit"><i class="fa fa-search"></i></button>
   </form>
 </div>
